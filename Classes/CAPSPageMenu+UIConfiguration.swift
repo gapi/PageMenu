@@ -74,6 +74,7 @@ extension CAPSPageMenu {
         
         // Set up controller scroll view
         controllerScrollView.isPagingEnabled = true
+        controllerScrollView.isScrollEnabled = configuration.scrollEnabled
         controllerScrollView.translatesAutoresizingMaskIntoConstraints = false
         controllerScrollView.alwaysBounceHorizontal = configuration.enableHorizontalBounce
         controllerScrollView.bounces = configuration.enableHorizontalBounce
