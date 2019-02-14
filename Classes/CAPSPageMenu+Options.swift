@@ -42,6 +42,7 @@ public enum CAPSPageMenuOption {
     case menuItemWidthBasedOnTitleTextWidth(Bool)
     case titleTextSizeBasedOnMenuItemWidth(Bool)
     case scrollAnimationDurationOnMenuItemTap(Int)
+    case scrollEnabled(Bool)
     case centerMenuItems(Bool)
     case hideTopMenuBar(Bool)
 }

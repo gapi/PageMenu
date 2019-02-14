@@ -46,6 +46,7 @@ class ViewController: UIViewController, CAPSPageMenuDelegate {
         
         // Customize menu (Optional)
         let parameters: [CAPSPageMenuOption] = [
+            .scrollEnabled(false),
             .menuItemSeparatorWidth(4.3),
             .scrollMenuBackgroundColor(UIColor.white),
             .viewBackgroundColor(UIColor(red: 247.0/255.0, green: 247.0/255.0, blue: 247.0/255.0, alpha: 1.0)),
