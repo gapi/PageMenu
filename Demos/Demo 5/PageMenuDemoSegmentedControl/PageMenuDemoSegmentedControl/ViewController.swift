@@ -70,6 +70,11 @@ class ViewController: UIViewController, CAPSPageMenuDelegate {
         pageMenu!.delegate = self
         
         self.view.addSubview(pageMenu!.view)
+        
+        controller3.title = "UPDATED"
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(4 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)) {
+            self.pageMenu?.updateMenuItemTitles()
+        }
     }
 
     // Uncomment below for some navbar color animation fun using the new delegate functions

@@ -158,6 +158,16 @@ open class CAPSPageMenu: UIViewController {
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
     }
+    
+    public func updateMenuItemTitles() {
+        var index = 0
+        for menuItem in menuItems {
+            if controllerArray.count > index {
+                menuItem.titleLabel?.text = controllerArray[index].title ?? "Menu \(Int(index) + 1)"
+            }
+            index += 1
+        }
+    }
 }
 
 
